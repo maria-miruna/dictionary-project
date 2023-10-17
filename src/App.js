@@ -14,7 +14,24 @@ function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small> Coded by Maria Botiș</small>
+          <small>
+            This project was coded by Maria Botiș and is{" "}
+            <a
+              href="https://github.com/maria-miruna/dictionary-project"
+              target="blank"
+              rel="noreferrer"
+            >
+              open-sourced on GitHub
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://gorgeous-beignet-f13f8b.netlify.app/"
+              target="blank"
+              rel="noreferrer"
+            >
+              hosted on Netlify
+            </a>
+          </small>
         </footer>
       </div>
     </div>
