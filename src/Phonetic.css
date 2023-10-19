@@ -1,0 +1,13 @@
+.Phonetic {
+  margin: 10px 0;
+}
+
+.Phonetic .text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666666;
+}
+
+.Phonetic a {
+  margin-right: 10px;
+}
