@@ -28,7 +28,17 @@ export default function Dictionary(props) {
     // documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyWord}`;
 
-    axios.get(apiUrl).then(handleDictionaryResponse);
+    axios
+      .get(apiUrl)
+      .then(handleDictionaryResponse)
+      .catch((error) => {
+        if (error.response && error.response.status === 404) {
+          window.alert(
+            "Sorry, the word you entered does not exist in our dictionary. Please check your spelling or try another word. 📖 "
+          );
+          window.location.reload();
+        }
+      });
 
     let sheCodesApiKey = `b3b90fo474e98fbe2dt0209a2baa7df2`;
     let sheCodesApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyWord}&key=${sheCodesApiKey}`;
