@@ -8,6 +8,11 @@
   margin: 30px 0;
 }
 
+.App-header h1 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
 .App-footer {
   text-align: center;
   margin: 30px 0;
